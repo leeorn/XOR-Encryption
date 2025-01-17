@@ -22,9 +22,8 @@ To run use `cat plaintext | ./encryptUtil -n threadsNum -k keyFile > cyphertext`
 - `src/queue.c`: The code to support the priority queue used by `encryptUtil.c`.
 - `include/encryptUtil.h`: The header file for `encryptUtil.c`.
 - `include/queue.h`: The header file for `queue.c`.
-- `test/X`: Several files that can be used as the input data to be encrypted/decrypted. ('X' is any file there.)
+- `test/*`: Several files that can be used as the input data to be encrypted/decrypted. ('X' is any file there.)
 - `README.md`: Explanation file.
-- `BTCodingAssignment.pdf`: The assignment details.
 
 # Explanation
 
