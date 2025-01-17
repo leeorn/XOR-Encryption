@@ -1,0 +1,22 @@
+Commands to remember:
+1) command to build the code
+    gcc encrypt.c -o encrypt
+
+2) command to run the code
+    ./encrypt 2 keyfile.txt
+
+3) command to send a (any) file to the code and print the reslt into a result file (in the same directory)
+    cat test2.txt | ./encrypt 1 /home/leeor/Desktop/Apple/test.txt > result
+
+4) command to run with a dpendent file (queue). The result file will called queue
+    gcc -o program encrypt.c queue.c
+
+5) command to use gdb to debug (and find seg-faults)
+    gcc -g encrypt.c -o program
+    gdb ./program
+    (once in the program) run 32 test.txt < test2.txt
+
+6) command to use valgrind to check memory leaks.
+    gcc -g encrypt.c -o program
+    valgrind ./program 8 test.txt < test2.txt
+    (Or with more info run) valgrind --leak-check=full ./program 8 test.txt < test2.txt
